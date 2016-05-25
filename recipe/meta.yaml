@@ -32,4 +32,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - ericdill
     - janschulz
+    - licode
+    - tacaswell

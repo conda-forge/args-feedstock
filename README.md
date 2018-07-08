@@ -14,14 +14,15 @@ Summary: Command Arguments for Humans.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/args-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/args-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/args-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/args-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/args-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/args-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/args-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/args-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/args/badges/version.svg)](https://anaconda.org/conda-forge/args)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/args/badges/downloads.svg)](https://anaconda.org/conda-forge/args)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-args-green.svg)](https://anaconda.org/conda-forge/args) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/args.svg)](https://anaconda.org/conda-forge/args) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/args.svg)](https://anaconda.org/conda-forge/args) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/args.svg)](https://anaconda.org/conda-forge/args) |
 
 Installing args
 ===============
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========

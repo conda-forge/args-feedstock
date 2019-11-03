@@ -3,11 +3,11 @@ About args
 
 Home: https://github.com/kennethreitz/args
 
-Package license: BSD 3-clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Command Arguments for Humans.
+Summary: Command Arguments for Humans
 
 
 

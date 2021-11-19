@@ -1,28 +1,34 @@
+{% set name = "args" %}
 {% set version = "0.1.0" %}
 
+
 package:
-  name: args
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/args/args-{{ version }}.tar.gz
-  md5: 66faf79ba2511def7b8b81d542482046
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/args-{{ version }}.tar.gz
+  sha256: a785b8d837625e9b61c39108532d95b85274acd679693b71ebb5156848fcf814
 
 build:
   number: 1004
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
-    - setuptools
-
+    - python >=3.6
+    - pip
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - args
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/kennethreitz/args
